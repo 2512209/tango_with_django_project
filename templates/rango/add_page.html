@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Rango</title>
+    </head>
+
+    <body>
+        <h1>Add a Page to {{ category.name }}</h1>
+        <div>
+            <form id="add_page_form" method="post" action="/rango/category/{{ category.slug }}/add_page/">
+              
+                <input type="submit" name="submit" value="Add Page" />
+            </form>
+        </div>
+    </body>
+</html>
